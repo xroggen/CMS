@@ -9,6 +9,7 @@
 <body>
   <nav class="navigation">
     <a href="{{ '/' | relative_url }}">Home</a>
+    <button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
   </nav>
 
   <main class="container">
@@ -18,5 +19,7 @@
   <footer>
     <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
   </footer>
+
+  <script src="{{ site.baseurl }}/assets/js/theme.js"></script>
 </body>
 </html>
