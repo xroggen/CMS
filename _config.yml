@@ -1,18 +1,12 @@
 # Site settings
 title: My Blog
 description: A simple Jekyll blog
-url: ""
-baseurl: ""
+url: "https://xroggen.github.io"
+baseurl: "/CMS"
 
 # Build settings
 markdown: kramdown
-permalink: /posts/:title/
-
-# Collections
-collections:
-  posts:
-    output: true
-    permalink: /posts/:title/
+permalink: /:title/
 
 # Defaults
 defaults:
