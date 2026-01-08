@@ -1,0 +1,29 @@
+# Site settings
+title: My Blog
+description: A simple Jekyll blog
+url: ""
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+permalink: /posts/:title/
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /posts/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md

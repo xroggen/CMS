@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<article class="post">
+  <h1>{{ page.title }}</h1>
+  <p class="post-date">{{ page.date | date: "%m %Y" }}</p>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  {% if page.related_posts %}
+  <div class="related-posts">
+    <h2>Related Articles</h2>
+    <ul>
+      {% for related_post in site.posts limit:3 %}
+        {% if related_post.url != page.url %}
+        <li>
+          <a href="{{ related_post.url | relative_url }}">{{ related_post.title }}</a>
+          <span class="post-date">{{ related_post.date | date: "%m %Y" }}</span>
+        </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+</article>
