@@ -7,7 +7,6 @@ baseurl: ""
 # Build settings
 markdown: kramdown
 permalink: /posts/:title/
-theme: null
 
 # Collections
 collections:
